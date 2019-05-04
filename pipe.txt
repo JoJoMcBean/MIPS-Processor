@@ -1,0 +1,52 @@
+ct : control -- we're gonna jump to register when (jump && branch = 1)
+port map (
+inst => s_Inst(31 downto 26),
+funct => s_Inst(5 downto 0),
+regdst => cmd(4),
+jump => cmd(3),
+branch => cmd(2),
+memread => open,
+memtoreg => cmd(1),--
+aluop => alu_op,--
+memwrite => s_DMemWr,
+alusrc => cmd(0),
+regwrite => s_RegWr);
+
+IFID
+PC+4 - 32 - 63 to 32
+inst - 32 - 31 to 0
+
+IDEX
+fwdA - 2 - 120 to 119
+fwdB - 2 - 118 to 117
+shamt - 5 - 116 to 112
+memtoreg - 1 - 111
+memwrite - 1 - 110
+regwrite - 1 - 109
+alusrc - 1 - 108
+aluop - 6 - 107 to 102
+reg a  - 32 - 101 to 70
+reg b - 32 - 69 to 38
+sext imm - 32 - 37 to 6
+reg wadd - 5 - 5 to 1
+halt - 1 - 0
+total: 117
+
+MEMWB
+memtoreg - 1 - 72
+memwrite - 1 - 71
+regwrite - 1 - 70
+alu out - 32 - 69 to 38
+reg b - 32 - 37 to 6
+reg wadd - 5 - 5 to 1
+halt - 1 - 0
+total - 73
+
+EXMEM
+memtoreg - 1 - 71
+regwrite - 1 - 70
+mem data - 32 - 69 to 38
+alu - 32 - 37 to 6
+reg wadd - 5 - 5 to 1
+halt - 1 - 0
+total: 72

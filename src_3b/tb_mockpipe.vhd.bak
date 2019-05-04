@@ -1,0 +1,107 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity tb_mockpipe is
+port(
+rst : in std_logic;
+data : in std_logic_vector(31 downto 0);
+load : in std_logic;
+stallp1 : std_logic;
+stallp2 : std_logic;
+stallp3 : std_logic;
+stallp4 : std_logic;
+p1 : out std_logic_vector(31 downto 0);
+p2 : out std_logic_vector(31 downto 0);
+p3 : out std_logic_vector(31 downto 0);
+p4 : out std_logic_vector(31 downto 0));
+end tb_mockpipe;
+
+architecture arch of tb_mockpipe is
+
+component register_gen is
+generic (n : positive := 32);
+  port(i_CLK        : in std_logic;     -- Clock input
+       i_RST        : in std_logic;     -- Reset input
+       i_WE         : in std_logic;     -- Write enable input
+       i_D          : in std_logic_vector(n-1 downto 0);     -- Data value input
+       o_Q          : out std_logic_vector(n-1 downto 0));   -- Data value output
+
+end component;
+
+component mux_gen is
+  generic(n : positive := 32);
+  port(i_A  : in std_logic_vector(n-1 downto 0);
+       i_B  : in std_logic_vector(n-1 downto 0);
+       sel  : in std_logic;
+       o_F  : out std_logic_vector(n-1 downto 0));
+
+end component;
+
+signal p1in,p1out,p2in,p2out,p3in,p3out,p4in,p4out,p4out2 : std_logic_vector(31 downto 0);
+signal clk,sp1,sp2,sp3,sp4 : std_logic;
+
+begin
+
+mux : mux_gen
+port map (
+i_A => p4out2,
+i_B => data,
+sel => load,
+o_F => p1in);
+
+sp4 <= not stallp4;
+sp3 <= not stallp3 and sp4;
+sp2 <= not stallp2 and sp3;
+sp1 <= not stallp1 and sp2;
+
+rp1 : register_gen
+generic map (n => 32)
+port map(
+i_CLK => clk,
+i_RST => rst,
+i_WE => sp1,
+i_D => p1in,
+o_Q => p1out);
+
+rp2 : register_gen
+generic map (n => 32)
+port map(
+i_CLK => clk,
+i_RST => rst,
+i_WE => sp2,
+i_D => p2in,
+o_Q => p2out);
+
+rp3 : register_gen
+generic map (n => 32)
+port map(
+i_CLK => clk,
+i_RST => rst,
+i_WE => sp3,
+i_D => p3in,
+o_Q => p3out);
+
+rp4 : register_gen
+generic map (n => 32)
+port map(
+i_CLK => clk,
+i_RST => rst,
+i_WE => sp4,
+i_D => p4in,
+o_Q => p4out);
+
+ggg:for i in 0 to 31 generate
+begin
+p2in(i) <= p1out(i) and sp1;
+p3in(i) <= p2out(i) and sp2;
+p4in(i) <= p3out(i) and sp3;
+p4out2(i) <= p4out(i) and sp4;
+end generate;
+
+p1 <= p1out;
+p2 <= p2out;
+p3 <= p3out;
+p4 <= p4out;
+
+end arch;

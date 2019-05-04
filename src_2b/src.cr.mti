@@ -1,0 +1,280 @@
+{U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/org2.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/org2.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/left_arith.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/left_arith.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity left_arith
+-- Compiling architecture left_arith_arch of left_arith
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/ushift.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/ushift.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ushift
+-- Compiling architecture arch of ushift
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/right_shift.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/right_shift.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity right_shift
+-- Compiling architecture right_shift_arch of right_shift
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux_gen.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux_gen.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_gen
+-- Compiling architecture structure of mux_gen
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd} {2 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aluha
+-- Compiling architecture arch of aluha
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(132): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(135): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(138): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(141): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(144): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(147): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(150): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(153): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(156): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(159): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(162): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(165): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(168): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/aluha.vhd(171): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/left_log.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/left_log.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity left_log
+-- Compiling architecture left_log_arch of left_log
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/invg.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/invg.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/shifter.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/shifter.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shifter
+-- Compiling architecture shifter_arch of shifter
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux6bs.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux6bs.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux6bs
+-- Compiling architecture arch of mux6bs
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux1b.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux1b.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux1b
+-- Compiling architecture arch of mux1b
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/decoder.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/decoder.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity decoder
+-- Compiling architecture arch of decoder
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/rfv0.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/rfv0.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rfv0
+-- Compiling architecture arch of rfv0
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux32.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux32.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux32
+-- Compiling architecture arch of mux32
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/extender.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/extender.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity extender
+-- Compiling architecture arch of extender
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/MIPS_Processor.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/MIPS_Processor.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MIPS_Processor
+-- Compiling architecture structure of MIPS_Processor
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/tb_dmem.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/tb_dmem.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_dmem
+-- Compiling architecture arch of tb_dmem
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/left_shift.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/left_shift.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity left_shift
+-- Compiling architecture left_shift_arch of left_shift
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/freak.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/freak.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity freak
+-- Compiling architecture arch of freak
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/control.vhd} {2 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/control.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity control
+-- Compiling architecture arch of control
+** Warning: U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/control.vhd(60): (vcom-1186) Array type selected signal assignment expression must be of a locally static subtype.
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/alu.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/alu.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity alu
+-- Compiling architecture arch of alu
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/xorg2.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/xorg2.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/andg2.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/andg2.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/right_arith.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/right_arith.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity right_arith
+-- Compiling architecture right_arith_arch of right_arith
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/reg_file.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/reg_file.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg_file
+-- Compiling architecture arch of reg_file
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/register_gen.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/register_gen.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register_gen
+-- Compiling architecture mixed of register_gen
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/right_log.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/right_log.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity right_log
+-- Compiling architecture right_log_arch of right_log
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux_n.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mux_n.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_n
+-- Compiling architecture structure of mux_n
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mem.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/mem.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/adder.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/adder.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder
+-- Compiling architecture arch of adder
+
+} {} {}} {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/L2P1A.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {U:/Documents/CprE 381/PP2/cpre381-toolflow-release/ModelSimWork/src/L2P1A.vhd}
+Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity L2P1A
+-- Compiling architecture strut of L2P1A
+
+} {} {}}

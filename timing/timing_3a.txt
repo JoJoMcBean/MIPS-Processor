@@ -1,0 +1,109 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 54.45mhz Clk Constraint: 20.00ns Slack: 1.63ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : register_gen:IDEX|s_Q[105]
+ To Node      : register_gen:MEMWB|s_Q[38]
+ Launch Clock : iCLK
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+      0.000      0.000           launch edge time
+      3.084      3.084  R        clock network delay
+      3.316      0.232     uTco  register_gen:IDEX|s_Q[105]
+      3.316      0.000 FF  CELL  IDEX|s_Q[105]|q
+      3.905      0.589 FF    IC  albrt|Mux4~0|dataa
+      4.309      0.404 FF  CELL  albrt|Mux4~0|combout
+      4.579      0.270 FF    IC  albrt|Mux4~1|datab
+      4.910      0.331 FF  CELL  albrt|Mux4~1|combout
+      5.783      0.873 FF    IC  albrt|\gen:0:adderi|g_and1|o_F|dataa
+      6.207      0.424 FF  CELL  albrt|\gen:0:adderi|g_and1|o_F|combout
+      6.497      0.290 FF    IC  albrt|\gen:1:adderi|g_or1|o_F~0|datab
+      6.922      0.425 FF  CELL  albrt|\gen:1:adderi|g_or1|o_F~0|combout
+      7.171      0.249 FF    IC  albrt|\gen:2:adderi|g_or1|o_F~0|datad
+      7.296      0.125 FF  CELL  albrt|\gen:2:adderi|g_or1|o_F~0|combout
+      7.546      0.250 FF    IC  albrt|\gen:3:adderi|g_or1|o_F~0|datad
+      7.671      0.125 FF  CELL  albrt|\gen:3:adderi|g_or1|o_F~0|combout
+      7.922      0.251 FF    IC  albrt|\gen:4:adderi|g_or1|o_F~0|datad
+      8.047      0.125 FF  CELL  albrt|\gen:4:adderi|g_or1|o_F~0|combout
+      8.296      0.249 FF    IC  albrt|\gen:5:adderi|g_or1|o_F~0|datad
+      8.421      0.125 FF  CELL  albrt|\gen:5:adderi|g_or1|o_F~0|combout
+      8.675      0.254 FF    IC  albrt|\gen:6:adderi|g_or1|o_F~0|datac
+      8.956      0.281 FF  CELL  albrt|\gen:6:adderi|g_or1|o_F~0|combout
+      9.204      0.248 FF    IC  albrt|\gen:7:adderi|g_or1|o_F~0|datad
+      9.329      0.125 FF  CELL  albrt|\gen:7:adderi|g_or1|o_F~0|combout
+      9.584      0.255 FF    IC  albrt|\gen:8:adderi|g_or1|o_F~0|datac
+      9.865      0.281 FF  CELL  albrt|\gen:8:adderi|g_or1|o_F~0|combout
+     10.115      0.250 FF    IC  albrt|\gen:9:adderi|g_or1|o_F~0|datad
+     10.240      0.125 FF  CELL  albrt|\gen:9:adderi|g_or1|o_F~0|combout
+     10.491      0.251 FF    IC  albrt|\gen:10:adderi|g_or1|o_F~0|datad
+     10.616      0.125 FF  CELL  albrt|\gen:10:adderi|g_or1|o_F~0|combout
+     10.866      0.250 FF    IC  albrt|\gen:11:adderi|g_or1|o_F~0|datad
+     10.991      0.125 FF  CELL  albrt|\gen:11:adderi|g_or1|o_F~0|combout
+     11.694      0.703 FF    IC  albrt|\gen:12:adderi|g_or1|o_F~0|datad
+     11.819      0.125 FF  CELL  albrt|\gen:12:adderi|g_or1|o_F~0|combout
+     12.070      0.251 FF    IC  albrt|\gen:13:adderi|g_or1|o_F~0|datad
+     12.195      0.125 FF  CELL  albrt|\gen:13:adderi|g_or1|o_F~0|combout
+     12.446      0.251 FF    IC  albrt|\gen:14:adderi|g_or1|o_F~0|datad
+     12.571      0.125 FF  CELL  albrt|\gen:14:adderi|g_or1|o_F~0|combout
+     12.820      0.249 FF    IC  albrt|\gen:15:adderi|g_or1|o_F~0|datad
+     12.945      0.125 FF  CELL  albrt|\gen:15:adderi|g_or1|o_F~0|combout
+     13.205      0.260 FF    IC  albrt|\gen:16:adderi|g_or1|o_F~0|datac
+     13.486      0.281 FF  CELL  albrt|\gen:16:adderi|g_or1|o_F~0|combout
+     13.737      0.251 FF    IC  albrt|\gen:17:adderi|g_or1|o_F~0|datad
+     13.862      0.125 FF  CELL  albrt|\gen:17:adderi|g_or1|o_F~0|combout
+     14.112      0.250 FF    IC  albrt|\gen:18:adderi|g_or1|o_F~0|datad
+     14.237      0.125 FF  CELL  albrt|\gen:18:adderi|g_or1|o_F~0|combout
+     14.487      0.250 FF    IC  albrt|\gen:19:adderi|g_or1|o_F~0|datad
+     14.612      0.125 FF  CELL  albrt|\gen:19:adderi|g_or1|o_F~0|combout
+     14.868      0.256 FF    IC  albrt|\gen:20:adderi|g_or1|o_F~0|datac
+     15.149      0.281 FF  CELL  albrt|\gen:20:adderi|g_or1|o_F~0|combout
+     15.400      0.251 FF    IC  albrt|\gen:21:adderi|g_or1|o_F~0|datad
+     15.525      0.125 FF  CELL  albrt|\gen:21:adderi|g_or1|o_F~0|combout
+     15.774      0.249 FF    IC  albrt|\gen:22:adderi|g_or1|o_F~0|datad
+     15.899      0.125 FF  CELL  albrt|\gen:22:adderi|g_or1|o_F~0|combout
+     16.149      0.250 FF    IC  albrt|\gen:23:adderi|g_or1|o_F~0|datad
+     16.274      0.125 FF  CELL  albrt|\gen:23:adderi|g_or1|o_F~0|combout
+     16.523      0.249 FF    IC  albrt|\gen:24:adderi|g_or1|o_F~0|datad
+     16.648      0.125 FF  CELL  albrt|\gen:24:adderi|g_or1|o_F~0|combout
+     16.906      0.258 FF    IC  albrt|\gen:25:adderi|g_or1|o_F~0|datac
+     17.187      0.281 FF  CELL  albrt|\gen:25:adderi|g_or1|o_F~0|combout
+     17.445      0.258 FF    IC  albrt|\gen:26:adderi|g_or1|o_F~0|datac
+     17.726      0.281 FF  CELL  albrt|\gen:26:adderi|g_or1|o_F~0|combout
+     17.983      0.257 FF    IC  albrt|\gen:27:adderi|g_or1|o_F~0|datac
+     18.264      0.281 FF  CELL  albrt|\gen:27:adderi|g_or1|o_F~0|combout
+     18.661      0.397 FF    IC  albrt|\gen:28:adderi|g_or1|o_F~0|datad
+     18.786      0.125 FF  CELL  albrt|\gen:28:adderi|g_or1|o_F~0|combout
+     19.024      0.238 FF    IC  albrt|\gen:29:adderi|g_or1|o_F~0|datad
+     19.149      0.125 FF  CELL  albrt|\gen:29:adderi|g_or1|o_F~0|combout
+     19.386      0.237 FF    IC  albrt|\gen:30:adderi|g_or1|o_F~0|datad
+     19.511      0.125 FF  CELL  albrt|\gen:30:adderi|g_or1|o_F~0|combout
+     19.759      0.248 FF    IC  albrt|m6|Mux31~13|datad
+     19.884      0.125 FF  CELL  albrt|m6|Mux31~13|combout
+     20.117      0.233 FF    IC  albrt|m6|Mux31~15|datac
+     20.398      0.281 FF  CELL  albrt|m6|Mux31~15|combout
+     20.623      0.225 FF    IC  albrt|m6|Mux31~16|datad
+     20.748      0.125 FF  CELL  albrt|m6|Mux31~16|combout
+     20.982      0.234 FF    IC  albrt|m6|Mux31~17|datac
+     21.262      0.280 FF  CELL  albrt|m6|Mux31~17|combout
+     21.262      0.000 FF    IC  MEMWB|s_Q[38]|d
+     21.366      0.104 FF  CELL  register_gen:MEMWB|s_Q[38]
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     22.970      2.970  R        clock network delay
+     23.002      0.032           clock pessimism removed
+     22.982     -0.020           clock uncertainty
+     23.000      0.018     uTsu  register_gen:MEMWB|s_Q[38]
+ Data Arrival Time  :    21.366
+ Data Required Time :    23.000
+ Slack              :     1.634
+ ===================================================================

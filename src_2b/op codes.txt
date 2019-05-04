@@ -1,0 +1,33 @@
+0000 add unsign
+0001 add sign
+0010 sub unsign
+0011 sub sign
+0100 or
+0101 nor
+0110 and
+0111 xor
+1000 srl
+1001 sra
+1010 sll
+1011 slt
+1100 sltu
+1101 lui
+
+00 0001 lui (where sla would be if it existed)
+
+31: memory write enable
+30: load from memory
+29: signed extension
+28: enable immediate
+27: reg file reset
+26: reg file write enable
+25-21: reg file write address
+20-16: reg file read A
+15-11: reg file read B
+10-4: immediate
+3-0: ALU op code
+
+mem load -infile dmem.hex -format hex /freak/dmem/ram
+
+mem load -infile dmem.hex -format hex /tb_SimplifiedMIPSProcessor/MySimplifiedMIPSProcess/DMem
+mem load -infile imem.hex -format hex /tb_SimplifiedMIPSProcessor/MySimplifiedMIPSProcess/IMem

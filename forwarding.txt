@@ -1,0 +1,74 @@
+joint harzard detection and forwarding
+mini pipe:
+write address
+where it is - inherent to where in the mini pipe it is
+when it'll be ready
+canUse set to 1 when whenReady matches pipe spot
+canBranch set to 1 when canUse is 1
+
+send like 4 bits of forwarding data through IDEX
+
+need to add a buffer to remember the save the data as it's saved to the reg file for forwarding
+or a port in the reg file that outputs the data that was most recently saved there
+or a port that saves the most recently written to address and outputs that data
+
+4 bits - 2 sets (A and B) of 2 bits for forwarding info sent through IDEX reg (even thicca now)
+00: no forwarding
+01: forward from MEMWB
+10: forward from EXMEM
+11: forward from buffer thing
+
+same for forward to 1 stage earlier for branching but case 11 will never be used
+
+careful to not give a fuck about reg addrs that are actually part of jump addresses
+"calm ur bits" - at 5:17 am I thought this was the funniest shit in the world
+
+ACTUALLY THIS IS ALL ALREADY IN THE PIPELINE
+when ready: can tell by memtoreg: come from memory vs come from alu
+destination: write address
+
+this just became way more complicated tho loolol
+
+inputs:
+branch
+jump
+Read addr A and B
+IDEX stuff - reg file write enable, memtoreg, 5 bits address 7 bit total
+MEMWB - same 7 bits
+EXMEM - yup
+
+output:
+4 2-bit forwarding controls branch A, branch B, alu A alu B
+filtered jump
+filtered branch
+stall+flush 1 bit (conditional stuff done seporately)
+
+many comparasons luckly combonational so it's simulatanious 
+have to "filter" jump and branch instead of block them with forced noop
+cuz you need that info to see what to do
+use noop to block reg and mem writes tho
+
+forwarding: 2 spots to retrieve from 2 spots to send it to
+
+many comparasons
+data hazard: stall PC+IFID and insert NOP
+control hazard: proceed with PC and overwrite with NOP
+
+store - 0 stalls and no forwarding needed
+load - 1 stall with forwarding
+alu - 0 stalls with forwarding
+branch/jump - 2 NOP
+
+cases we gotta deal with:
+jump - don't give a fuck, never flush just stall once
+jump reg - flush and block jump until ready then stall once
+branch - flush and block until ready then stall once - need contents earlier than normal
+other - flush until ready, contents needed later ie forward instructions send through pipe
+
+btw stalls on jumps might need some memory to sort out
+maybe compare in vs out of IFID (including PC+4) to detect when 1 cycle has passed
+don't wanna get stuck constantly jumping
+compare PC+4 coming through IFID reg to PC should be the same when going in order, force noop when different !!!!! I like this !!!!!
+
+
+

@@ -1,0 +1,97 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity rfv0 is
+port(
+i_CLK : in std_logic;
+i_D : in std_logic_vector(31 downto 0);
+i_WE : in std_logic;
+i_RST : in std_logic;
+i_WAD : in std_logic_vector(4 downto 0);
+i_RSAD : in std_logic_vector(4 downto 0);
+i_RTAD : in std_logic_vector(4 downto 0);
+o_V0 : out std_logic_vector(31 downto 0);
+o_RSD : out std_logic_vector(31 downto 0);
+o_RTD : out std_logic_vector(31 downto 0));
+end rfv0;
+
+architecture arch of rfv0 is
+
+component register_gen is
+generic (n : positive := 32);
+  port(i_CLK        : in std_logic;     -- Clock input
+       i_RST        : in std_logic;     -- Reset input
+       i_WE         : in std_logic;     -- Write enable input
+       i_D          : in std_logic_vector(n-1 downto 0);     -- Data value input
+       o_Q          : out std_logic_vector(n-1 downto 0));   -- Data value output
+end component;
+
+component decoder is
+port(i_EN : in std_logic;
+i_ADR : in std_logic_vector(4 downto 0);
+o_SEL : out std_logic_vector(31 downto 0));
+end component;
+
+component mux32 is
+port(
+i_D : in std_logic_vector(1023 downto 0);
+i_SEL : in std_logic_vector(4 downto 0);
+o_P : out std_logic_vector(31 downto 0));
+end component;
+
+signal s_RLAD : std_logic_vector(4 downto 0);
+signal s_WE : std_logic_vector(31 downto 0);
+signal s_RD : std_logic_vector(1023 downto 0);
+
+
+begin
+
+dec : decoder 
+port map (
+i_EN => i_WE,
+i_ADR => i_WAD,
+o_SEL => s_WE);
+
+L1: for i in 0 to 31 generate
+reg_i : register_gen
+generic map (32)
+port map (
+i_CLK => i_CLK,
+i_RST => i_RST,
+i_WE => s_WE(i),
+i_D => i_D,
+o_Q => s_RD(32*i+31 downto 32*i));
+end generate;
+
+o_V0 <= s_RD(95 downto 64);
+
+RL : register_gen
+generic map(5)
+port map (
+i_CLK => i_CLK,
+i_RST => i_RST,
+i_WE => i_WE,
+i_D => i_WAD,
+o_Q => s_RLAD);
+
+muxRL : mux32
+port map(
+i_D => s_RD,
+i_SEL => s_RLAD,
+o_P => o_RL);
+
+
+muxRS : mux32
+port map(
+i_D => s_RD,
+i_SEL => i_RSAD,
+o_P => o_RSD);
+
+muxRT : mux32
+port map(
+i_D => s_RD,
+i_SEL => i_RTAD,
+o_P => o_RTD);
+
+
+end arch;
